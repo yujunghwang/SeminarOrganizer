@@ -1,7 +1,10 @@
 #### remind the applied micro seminar in the afternoon
+# load libraries again
+library(gmailr)
+library(googlesheets4)
 
 # set directory to current folder
-rootdir <- dirname(getSourceEditorContext()$path)
+rootdir <- "C:/Users/yhwang18/Dropbox/Document/GitHub/SeminarOrganizer"
 setwd(rootdir)
 
 # first check if there is any seminar scheduled today

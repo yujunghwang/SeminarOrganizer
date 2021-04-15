@@ -1,7 +1,11 @@
 ### announce the next applied micro seminar and circulate the sign up sheet
 
+# load libraries 
+library(gmailr)
+library(googlesheets4)
+
 # set directory to current folder
-rootdir <- dirname(getSourceEditorContext()$path)
+rootdir <- "C:/Users/yhwang18/Dropbox/Document/GitHub/SeminarOrganizer"
 setwd(rootdir)
 
 # first check if there is any seminar scheduled within the next 7 days

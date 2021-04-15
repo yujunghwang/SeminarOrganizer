@@ -1,42 +1,19 @@
-Error in file(filename, "r", encoding = encoding) : 
-  cannot open the connection
-Calls: source -> file
-In addition: Warning message:
-In file(filename, "r", encoding = encoding) :
-  cannot open file 'setGmailConfig.R': No such file or directory
-Execution halted
-Error in file(filename, "r", encoding = encoding) : 
-  cannot open the connection
-Calls: source -> file
-In addition: Warning message:
-In file(filename, "r", encoding = encoding) :
-  cannot open file 'setGmailConfig.R': No such file or directory
-Execution halted
-Error in file(filename, "r", encoding = encoding) : 
-  cannot open the connection
-Calls: source -> file
-In addition: Warning message:
-In file(filename, "r", encoding = encoding) :
-  cannot open file 'setGmailConfig.R': No such file or directory
-Execution halted
-Error in file(filename, "r", encoding = encoding) : 
-  cannot open the connection
-Calls: source -> file
-In addition: Warning message:
-In file(filename, "r", encoding = encoding) :
-  cannot open file 'setGmailConfig.R': No such file or directory
-Execution halted
-Error in file(filename, "r", encoding = encoding) : 
-  cannot open the connection
-Calls: source -> file
-In addition: Warning message:
-In file(filename, "r", encoding = encoding) :
-  cannot open file 'setGmailConfig.R': No such file or directory
-Execution halted
-Error in file(filename, "r", encoding = encoding) : 
-  cannot open the connection
-Calls: source -> file
-In addition: Warning message:
-In file(filename, "r", encoding = encoding) :
-  cannot open file 'setGmailConfig.R': No such file or directory
-Execution halted
+
+Attaching package: 'gmailr'
+
+The following object is masked from 'package:utils':
+
+    history
+
+The following objects are masked from 'package:base':
+
+    body, date, labels, message
+
+Warning message:
+package 'gmailr' was built under R version 4.0.5 
+Warning message:
+package 'googlesheets4' was built under R version 4.0.5 
+Auto-refreshing stale OAuth token.
+Reading from "Applied Micro Fall 2021 Schedule"
+Range "Sheet1"
+Id: 178d5d4e42df9e1d

@@ -1,7 +1,10 @@
 # email to a seminar speaker to ask a paper title / paper copy
+# load libraries
+library(gmailr)
+library(googlesheets4)
 
 # set directory to current folder
-rootdir <- dirname(getSourceEditorContext()$path)
+rootdir <- "C:/Users/yhwang18/Dropbox/Document/GitHub/SeminarOrganizer"
 setwd(rootdir)
 
 # first check if there is any seminar scheduled within the next 10 days & if paper title is empty
@@ -13,7 +16,7 @@ if (daysleft[ind]<=7 & daysleft[ind]>=1 & is.na(seminar_schedule$PaperTitle[ind]
   msg_heading <- paste0("Dear Professor ",speaker_name,", \n\n")
   
   ### feel free to modify the email text body, msg_body
-  msg_body <- "Can you please send me your paper title (and your paper copy if it is available) at your earliest convenience? \nI will look forward to meeting you soon at the JHU Applied Micro seminar.\n"
+  msg_body <- "Can you please send me your paper title (and your paper copy if it is available) at your earliest convenience? \nI will look forward to meeting you soon at the JHU Applied Micro seminar.\n\n"
   
   msg_end <- paste0("Best,\n",organizer_name)
   

@@ -20,10 +20,11 @@ library(googlesheets4)
 library(rstudioapi)
 ```
 
-Next, you should set up Gmail API to allow R to access your gmail
-account. You should read instructions in the following website.
+Next, you should set up Gmail API and Google Sheet API to allow R to
+access your gmail account. You should read instructions in the following
+website.
 
-<https://github.com/r-lib/gmailr>
+<https://github.com/r-lib/gmailr> <https://googlesheets4.tidyverse.org/>
 
 Finally, you should set basic parameters in setGmailConfig.R code file.
 I recommend creating the seminar schedule table and one-to-one meeting
@@ -50,13 +51,14 @@ the one-to-one meeting sign up sheet.
 The third part is to remind about the seminar on the seminar date.
 
 ``` r
-# ask for a paper title from next speaker, run weekly every Thursday
+# ask for a paper title from next speaker, run every Thursday
 taskscheduler_create(
   taskname="ask_speaker",
   rscript=paste0(rootdir,"/askSpeaker.R"),
   schedule="WEEKLY",
-  starttime="06:00",
+  starttime="10:00",
   startdate="04/15/2021",
+  days="THU",
   Rexe=file.path(Sys.getenv("R_HOME"),"bin","Rscript.exe")
 )
 
@@ -67,6 +69,7 @@ taskscheduler_create(
   schedule="WEEKLY",
   starttime="06:00",
   startdate="04/16/2021",
+  days="FRI",
   Rexe=file.path(Sys.getenv("R_HOME"),"bin","Rscript.exe")
 )
 
@@ -77,6 +80,7 @@ taskscheduler_create(
   schedule="WEEKLY",
   starttime="06:00",
   startdate="04/21/2021",
+  days="WED",
   Rexe=file.path(Sys.getenv("R_HOME"),"bin","Rscript.exe")
 )
 ```
