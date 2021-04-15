@@ -1,5 +1,9 @@
 ### announce the next applied micro seminar and circulate the sign up sheet
 
+# set directory to current folder
+rootdir <- dirname(getSourceEditorContext()$path)
+setwd(rootdir)
+
 # first check if there is any seminar scheduled within the next 7 days
 source("setGmailConfig.R")
 

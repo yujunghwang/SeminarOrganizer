@@ -1,4 +1,9 @@
 # email to a seminar speaker to ask a paper title / paper copy
+
+# set directory to current folder
+rootdir <- dirname(getSourceEditorContext()$path)
+setwd(rootdir)
+
 # first check if there is any seminar scheduled within the next 10 days & if paper title is empty
 source("setGmailConfig.R")
 
