@@ -16,7 +16,8 @@ package 'googlesheets4' was built under R version 4.0.5
 Auto-refreshing stale OAuth token.
 Reading from "Applied Micro Fall 2021 Schedule"
 Range "Sheet1"
-Id: 178d5d4e42df9e1d
+Auto-refreshing stale OAuth token.
+Id: 178f3df5f264005c
 
 Attaching package: 'gmailr'
 
@@ -35,5 +36,3 @@ package 'googlesheets4' was built under R version 4.0.5
 Auto-refreshing stale OAuth token.
 Reading from "Applied Micro Fall 2021 Schedule"
 Range "Sheet1"
-Auto-refreshing stale OAuth token.
-Id: 178f9e17205e412c

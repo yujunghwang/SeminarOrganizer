@@ -26,6 +26,7 @@ library(rstudioapi)
 Next, you should set up Gmail API and Google Sheet API to allow R to access your gmail account. You should read instructions in the following website. 
 
 https://github.com/r-lib/gmailr
+
 https://googlesheets4.tidyverse.org/
 
 Finally, you should set basic parameters in setGmailConfig.R code file.

@@ -25,7 +25,7 @@ if (daysleft[ind]<7 & daysleft[ind]>=1){
   msg_heading <- paste0("Dear all, \n\n")
   
   ### feel free to modify the email text body, msg_body
-  msg_body <- paste0(speaker_name," from ",speaker_institution, " will be our next seminar speaker.\n")
+  msg_body <- paste0(speaker_name," from ",speaker_institution, " will be our next seminar speaker.\n\n")
   
   if (!is.na(paper_title)){
     msg_body <- paste0(msg_body,"The speaker will present '", paper_title, "' on ", seminar_date," at ", seminar_time, ".\n\n")
