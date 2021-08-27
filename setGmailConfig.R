@@ -8,13 +8,13 @@ organizer_name="Yujung"
 organizer_email ="yujungghwang@gmail.com"
 
 ### Audience email
-audience_email ="yujungghwang@gmail.com"
+audience_email ="econ-microseminar@lists.johnshopkins.edu"
 
 ### Zoom link for the seminar
-zoom_link="https://zoom.us/my/yhwang"
+zoom_link="https://zoom.us/j/99712760827"
 
 ### Zoom link to meet the speaker one-to-one
-meeting_link="https://zoom.us/my/yhwang"
+meeting_link="https://zoom.us/j/96854703347"
 
 ### sign up information
 signup_link ="https://docs.google.com/spreadsheets/d/11HCLZPHPx0j0ILhy3w8u5QAiPk1SD8paJdbgVzPJSm0/edit#gid=0"
@@ -63,3 +63,7 @@ paper_link =seminar_schedule$PaperLink[ind]
 ### seminar date and time
 seminar_date=seminar_schedule$Date[ind]
 seminar_time=seminar_schedule$Time[ind]
+
+### virtual/in-person
+seminar_place=seminar_schedule$Virtual[ind]
+

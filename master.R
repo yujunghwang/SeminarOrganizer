@@ -26,8 +26,8 @@ taskscheduler_create(
   taskname="ask_speaker",
   rscript=paste0(rootdir,"/askSpeaker.R"),
   schedule="WEEKLY",
-  starttime="10:00",
-  startdate="04/15/2021",
+  starttime="06:00",
+  startdate="08/26/2021",
   days="THU",
   Rexe=file.path(Sys.getenv("R_HOME"),"bin","Rscript.exe")
 )
@@ -38,19 +38,19 @@ taskscheduler_create(
   rscript=paste0(rootdir,"/askSignup.R"),
   schedule="WEEKLY",
   starttime="06:00",
-  startdate="04/16/2021",
+  startdate="08/27/2021",
   days="FRI",
   Rexe=file.path(Sys.getenv("R_HOME"),"bin","Rscript.exe")
 )
 
-# send a reminder for a seminar every Wednesday
+# send a reminder for a seminar every Tuesday evening
 taskscheduler_create(
   taskname="send_reminder",
   rscript=paste0(rootdir,"/remindSeminar.R"),
   schedule="WEEKLY",
-  starttime="06:00",
-  startdate="04/21/2021",
-  days="WED",
+  starttime="18:00",
+  startdate="08/30/2021",
+  days="TUE",
   Rexe=file.path(Sys.getenv("R_HOME"),"bin","Rscript.exe")
 )
 
